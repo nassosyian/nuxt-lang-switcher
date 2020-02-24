@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-lang-switcher",
+  "version": "1.0.0",
+  "description": "Language switcher component and module that automatically adds Hreflang links to each page, mainly for fixed-url multilingual sites",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "github": {
+		"name": "nuxt-lang-switcher",
+		"owner": "nassosyian"
+  },
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/nassosyian/nuxt-lang-switcher.git"
+	},
+	"homepage": "https://github.com/nassosyian/nuxt-lang-switcher",
+	"bugs": {
+		"url": "https://github.com/nassosyian/nuxt-lang-switcher/issues"
+	},
+  "dependencies": {
+    "url-parse": "^1.4.7"
+  }
+}

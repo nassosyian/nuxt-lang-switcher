@@ -29,6 +29,7 @@ modules: [
 ## Config
 
 in the nuxt.config.js add 
+NOTE: the urls must be *without* the ending '/'
 
 ```js
 	'lang-switcher':
@@ -42,7 +43,7 @@ in the nuxt.config.js add
 			{
 				// [key = locale string]: [value = unique url]
 				en: '/',
-				fr: '/fr/'
+				fr: '/fr'
 			},
 			pageLabel_2: 
 			{
@@ -53,12 +54,14 @@ in the nuxt.config.js add
 	},
 ```
 
+
+
 ## Vue Component
 
-'lang-switcher' will generate a 'nuxt-link' with the correct url
+'lang-switcher' will generate an anchor with the correct url
 
 ```html
-<lang-switcher lang="locale_you_want" :prefetch="false">
+<lang-switcher lang="locale_you_want">
 	<!-- your stuff here -->
 </lang-switcher>
 ```

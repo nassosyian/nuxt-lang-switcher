@@ -1,6 +1,6 @@
 {
   "name": "nuxt-lang-switcher",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Language switcher component and module that automatically adds Hreflang links to each page, mainly for fixed-url multilingual sites",
   "license": "MIT",
   "publishConfig": {

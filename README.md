@@ -10,7 +10,7 @@ yarn add 'nuxt-lang-switcher'
 or
 
 ```bash
-yarn add 'nuxt-lang-switcher'
+npm install 'nuxt-lang-switcher'
 ```
 
 ## Setup
@@ -20,7 +20,7 @@ in the "modules" section of nuxt.config.js add 'nuxt-lang-switcher'
 ```js
 modules: [
 	...
-	'nuxt-lang-switcher'
+	'nuxt-lang-switcher',
 	...
 ]
 
@@ -34,13 +34,13 @@ in the nuxt.config.js add
 	'lang-switcher':
 	{
 		name: 'lang-switcher',	// the name of the globally visible vue component
-		site: 'https://www.mysite.com',	// fully qualified url of your site
+		site: 'https://www.mysite.com',	// fully qualified url of your site, used only in production builds
 		default_locale: 'en',	// the locale to be used as hreflang='x-default'
 		urlMap:
 		{
 			pageLabel_1: // arbitrary page label
 			{
-				// [key locale string]: [value unique url]
+				// [key = locale string]: [value = unique url]
 				en: '/',
 				fr: '/fr/'
 			},
@@ -51,4 +51,14 @@ in the nuxt.config.js add
 			},
 		}
 	},
+```
+
+## Vue Component
+
+<lang-switcher> will generate a <nuxt-link> with the correct url
+
+```html
+<lang-switcher lang="locale_you_want" :prefetch="false">
+	<!-- your stuff here -->
+</lang-switcher>
 ```

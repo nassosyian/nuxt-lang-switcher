@@ -6,6 +6,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "Nassos Yiannopoulos <nassosyian@gmail.com>",
   "github": {
 		"name": "nuxt-lang-switcher",
 		"owner": "nassosyian"
@@ -17,7 +18,8 @@
 	"homepage": "https://github.com/nassosyian/nuxt-lang-switcher",
 	"bugs": {
 		"url": "https://github.com/nassosyian/nuxt-lang-switcher/issues"
-	},
+  },
+  "main": "lib/module.js",
   "dependencies": {
     "url-parse": "^1.4.7"
   }

@@ -55,7 +55,7 @@ in the nuxt.config.js add
 
 ## Vue Component
 
-<lang-switcher> will generate a <nuxt-link> with the correct url
+'lang-switcher' will generate a 'nuxt-link' with the correct url
 
 ```html
 <lang-switcher lang="locale_you_want" :prefetch="false">
